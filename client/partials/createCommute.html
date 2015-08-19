@@ -1,0 +1,8 @@
+<div>
+	<label>Home Address:<input autocomplete="section-blue home street-address"ng-model="commute.homeAddress" type="textbox" id="homeAddress"></label><br/>
+	<label>Work Address:<input autocomplete="section-blue work street-address" ng-model="commute.workAddress" type="textbox" id="workAddress"></label><br/>
+	<label>Start time:<input ng-model="commute.gotoWorkTime" type="textbox" id="gotoWorkTime"></label><br/>
+	<label>Leave time:<input ng-model="commute.leaveWorkTime" type="textbox" id="leaveWorkTime"></label><br/>
+	<label>Max average commute:<input ng-model="commute.desiredCommute" type="textbox" id="desiredCommute"></label><br/>
+	<button ng-click="cC.createCommute(commute)">Submit</button>
+</div>

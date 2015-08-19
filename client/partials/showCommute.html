@@ -1,0 +1,26 @@
+<div>
+	<a href="#/create"></a> <a href="#/logout"></a> 
+	<label for="commute_table">Current Commutes:</label>
+	<input type="text" ng-model="filter_name" placeholder="filter">
+	<div id="commute_table">
+		<table>
+			<thead>
+				<th>Name</th>
+				<th>Survey Question</th>
+				<th>Date Posted</th>
+				<th>Action</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td ng-repeat="commute in commutes | filter: filter_name">
+					<td ng-bind=pC.loginName></td>
+					<td ng-bind=pC.question></td>
+					<td ng-bind=pC.createdAt></td>
+					<td>HI</td>
+
+					<td><a href="/remove/id"><button>Delete</button></a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div> <!-- post_table -->
+</div>

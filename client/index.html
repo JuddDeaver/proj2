@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="commutes_app" ng-controller="commutesController as cC">
+  <head>
+    <title ng-bind= pC.title></title>
+ <!-- THESE TWO VERSIONS BELOW MUST MATCH!!!! -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-route.js"></script>
+ 
+ <!-- My modules here -->
+    <script type="text/javascript" src="../modules/app.js"></script>
+    <script type="text/javascript" src="../controllers/commutes.js"></script>
+    <script type="text/javascript" src="../factories/commutes.js"></script>
+
+  </head>
+  <body>
+    <div>
+        <div ng-view="">
+        </div>
+    </div>
+  </body>
+</html>
